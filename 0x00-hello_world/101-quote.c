@@ -1,0 +1,14 @@
+#include<unistd>
+/**
+ * main-print"and that piece of art is useful"-dora korpar,2015-10-09",
+ * followed by a new line, to stand error.
+ *
+ * Return:Always 1.
+ */
+int main(void)
+{
+	write(2,
+			"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+			59);
+	return (1);
+}
