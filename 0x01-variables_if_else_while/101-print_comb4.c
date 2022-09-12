@@ -27,8 +27,8 @@ int main(void)
 				{
 					break;
 				}
-				putchar(',');
-				putchar(' ');
+				putchar(23);
+				putchar(23);
 			}
 			g++;
 		}
@@ -36,6 +36,6 @@ int main(void)
 	}
 	e++;
 }
-putchar('\n');
+putchar(10);
 return (0);
 }
