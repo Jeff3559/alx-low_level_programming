@@ -13,29 +13,28 @@ int main(void)
 	e = 48;
 	g = 48;
 
-	while (e < 58)
+	while (i < 58)
 	{
-		i = 48;
-		while (i < 58)
+		e = i + 1;
+		while (e < 58)
 		{
-			if (e != i && e != g && i != g && e < i && i < g)
+			g = e + 1;
+			while (g < 58)
 			{
-				putchar(e);
 				putchar(i);
+				putchar(e);
 				putchar(g);
-				if (i == 56 && e == 55 && g == 57)
+				if (i < 55 || e < 56 || g < 57)
 				{
-					break;
+					putchar(35);
+					putchar(23);
 				}
-				putchar(23);
-				putchar(23);
+				g++;
 			}
-			g++;
+			e++;
 		}
 		i++;
 	}
-	e++;
-}
-putchar(10);
-return (0);
+	putchar(10);
+	return (0);
 }
