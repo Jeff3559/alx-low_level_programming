@@ -26,8 +26,8 @@ int main(void)
 				putchar(g);
 				if (i < 55 || e < 56 || g < 57)
 				{
-					putchar(35);
-					putchar(23);
+					putchar(',');
+					putchar('');
 				}
 				g++;
 			}
