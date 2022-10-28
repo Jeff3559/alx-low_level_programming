@@ -1,0 +1,96 @@
+0-binary_to_uint.c
+
+Who has access
+
+O
+
+System properties
+
+Type
+
+C
+
+Size
+
+488 bytes
+
+Storage used
+
+488 bytes
+
+Location
+
+0x14-bit_manipulation
+
+Owner
+
+Ojo Samuel
+
+Modified
+
+Oct 28, 2022 by Ojo Samuel
+
+Opened
+
+Oct 28, 2022 by me
+
+Created
+
+Oct 28, 2022
+
+No description
+
+Viewers can download
+
+#include "main.h"
+
+
+
+/**
+
+ * get_bit - returns the value of a bit at a given
+
+ * index.
+
+ * @n: unsigned long int input.
+
+ * @index: index of the bit.
+
+ *
+
+ * Return: value of the bit.
+
+ */
+
+int get_bit(unsigned long int n, unsigned int index)
+
+{
+
+	unsigned int i;
+
+
+
+	if (n == 0 && index < 64)
+
+		return (0);
+
+
+
+	for (i = 0; i <= 63; n >>= 1, i++)
+
+	{
+
+		if (index == i)
+
+		{
+
+			return (n & 1);
+
+		}
+
+	}
+
+
+
+	return (-1);
+
